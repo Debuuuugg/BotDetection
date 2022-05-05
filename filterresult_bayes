@@ -1,0 +1,102 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     data1-weka.filters.unsupervised.attribute.Remove-R2
+Instances:    34072
+Attributes:   9
+              role_id
+              level
+              occ
+              race
+              server_id
+              deposit_year
+              deposit_his
+              role_count
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                        Class
+Attribute                   Y              N
+                        (0.5)          (0.5)
+=============================================
+role_id
+  mean          913157091.0331 356598077.0505
+  std. dev.    1000344866.1168 735892642.5823
+  weight sum             17038          17034
+  precision          70585.462      70585.462
+
+level
+  mean                 47.5948       114.6507
+  std. dev.            28.5479        32.1364
+  weight sum             17038          17034
+  precision                  1              1
+
+occ
+  mean                  5.1084         9.4797
+  std. dev.             1.5227         6.6098
+  weight sum             17038          17034
+  precision                  1              1
+
+race
+  mean                   0.964         0.0565
+  std. dev.             0.1864         0.2308
+  weight sum             17038          17034
+  precision                  1              1
+
+server_id
+  mean               1027.5308      1028.8882
+  std. dev.            17.4435        16.7264
+  weight sum             17038          17034
+  precision              6.125          6.125
+
+deposit_year
+  mean                       0      1963.6884
+  std. dev.            45.2689     13808.4862
+  weight sum             17038          17034
+  precision           271.6134       271.6134
+
+deposit_his
+  mean                       0      3395.6259
+  std. dev.            44.6265     21079.4378
+  weight sum             17038          17034
+  precision           267.7593       267.7593
+
+role_count
+  mean                 16.1713         1.9423
+  std. dev.             6.6003          1.609
+  weight sum             17038          17034
+  precision             1.1739         1.1739
+
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       31319               91.9201 %
+Incorrectly Classified Instances      2753                8.0799 %
+Kappa statistic                          0.8384
+Mean absolute error                      0.0875
+Root mean squared error                  0.2667
+Relative absolute error                 17.4942 %
+Root relative squared error             53.3437 %
+Total Number of Instances            34072     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.147    0.870      0.985    0.924      0.846    0.991     0.994     Y
+                 0.853    0.015    0.983      0.853    0.913      0.846    0.991     0.983     N
+Weighted Avg.    0.919    0.081    0.927      0.919    0.919      0.846    0.991     0.988     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 16783   255 |     a = Y
+  2498 14536 |     b = N
+
